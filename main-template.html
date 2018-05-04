@@ -1,5 +1,6 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+	<head>
 		<!-- NAME: 1:2:1 COLUMN -->
 		<!--[if gte mso 15]>
         <xml>
@@ -66,6 +67,7 @@
 			cursor:default;
 			text-decoration:none;
 		}
+
 		p,a,li,td,body,table,blockquote{
 			-ms-text-size-adjust:100%;
 			-webkit-text-size-adjust:100%;
@@ -83,11 +85,9 @@
 		}
 		#bodyCell{
 			padding:10px;
-			border-top:3px none #ffffff;
 		}
 		.templateContainer{
 			max-width:800px !important;
-			border:3px none #ffffff;
 		}
 		a.mcnButton{
 			display:block;
@@ -97,7 +97,6 @@
 		}
 		.mcnTextContent{
 			word-break:break-word;
-			padding:40px;
 		}
 		.mcnTextContent img{
 			height:auto !important;
@@ -119,7 +118,7 @@
 	@tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 	*/
 		#bodyCell{
-			/*@editable*/border-top:3px none #ffffff;
+			/*@editable*/border-top:0;
 		}
 	/*
 	@tab Page
@@ -127,7 +126,7 @@
 	@tip Set the border for your email.
 	*/
 		.templateContainer{
-			/*@editable*/border:3px none #ffffff;
+			/*@editable*/border:0;
 		}
 	/*
 	@tab Page
@@ -136,7 +135,7 @@
 	@style heading 1
 	*/
 		h1{
-			/*@editable*/color:#ffffff;
+			/*@editable*/color:#383838;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:26px;
 			/*@editable*/font-style:normal;
@@ -152,7 +151,7 @@
 	@style heading 2
 	*/
 		h2{
-			/*@editable*/color:#ffffff;
+			/*@editable*/color:#383838;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:22px;
 			/*@editable*/font-style:normal;
@@ -168,18 +167,19 @@
 	@style heading 3
 	*/
 		h3{
-			/*@editable*/color:#667997;
+			/*@editable*/color:#383838;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:20px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:125%;
 			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:center;
-			border-top: 1px dotted #667997;
-			border-bottom: 1px dotted #667997;
-			padding:5px;
-			margin-bottom:10px;
+			text-align:center;
+			border-top: 1px dotted #383838;
+			border-bottom: 1px dotted #383838;
+			padding-top:8px;
+			padding-bottom:8px;
+			margin-bottom:8px;
 		}
 	/*
 	@tab Page
@@ -188,7 +188,7 @@
 	@style heading 4
 	*/
 		h4{
-			/*@editable*/color:#ffffff;
+			/*@editable*/color:#383838;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:18px;
 			/*@editable*/font-style:normal;
@@ -232,7 +232,7 @@
 	*/
 		#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p a{
 			/*@editable*/color:#ffffff;
-			/*@editable*/font-weight:normal;
+			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
 	/*
@@ -246,9 +246,9 @@
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:2px solid #222222;
-			/*@editable*/border-bottom:3px none #222222;
-			/*@editable*/padding-top:0;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:2px solid #383838;
+			/*@editable*/padding-top:9px;
 			/*@editable*/padding-bottom:0;
 		}
 	/*
@@ -257,9 +257,9 @@
 	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 	*/
 		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
-			/*@editable*/color:#ffffff;
+			/*@editable*/color:#202020;
 			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:24px;
+			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
 			/*@editable*/text-align:left;
 		}
@@ -269,8 +269,8 @@
 	@tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 	*/
 		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
-			/*@editable*/color:#222222;
-			/*@editable*/font-weight:normal;
+			/*@editable*/color:#383838;
+			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
 	/*
@@ -284,10 +284,10 @@
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:1px none ;
+			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:0px;
-			/*@editable*/padding-bottom:0px;
+			/*@editable*/padding-top:0;
+			/*@editable*/padding-bottom:0;
 		}
 	/*
 	@tab Upper Body
@@ -295,11 +295,11 @@
 	@tip Set the styling for your email's upper body text. Choose a size and color that is easy to read.
 	*/
 		#templateUpperBody .mcnTextContent,#templateUpperBody .mcnTextContent p{
-			/*@editable*/color:#222222;
+			/*@editable*/color:#202020;
 			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:14px;
+			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
-			/*@editable*/text-align:justify;
+			/*@editable*/text-align:left;
 		}
 	/*
 	@tab Upper Body
@@ -307,8 +307,8 @@
 	@tip Set the styling for your email's upper body links. Choose a color that helps them stand out from your text.
 	*/
 		#templateUpperBody .mcnTextContent a,#templateUpperBody .mcnTextContent p a{
-			/*@editable*/color:#222222;
-			/*@editable*/font-weight:normal;
+			/*@editable*/color:#383838;
+			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
 	/*
@@ -317,13 +317,13 @@
 	@tip Set the background color and borders for your email's columns.
 	*/
 		#templateColumns{
-			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-color:#FFFFFF;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:3px none #ffffff;
-			/*@editable*/border-bottom:3px none #ffffff;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
 			/*@editable*/padding-top:0;
 			/*@editable*/padding-bottom:0;
 		}
@@ -333,7 +333,7 @@
 	@tip Set the styling for your email's column text. Choose a size and color that is easy to read.
 	*/
 		#templateColumns .columnContainer .mcnTextContent,#templateColumns .columnContainer .mcnTextContent p{
-			/*@editable*/color:#ffffff;
+			/*@editable*/color:#202020;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
@@ -345,8 +345,8 @@
 	@tip Set the styling for your email's column links. Choose a color that helps them stand out from your text.
 	*/
 		#templateColumns .columnContainer .mcnTextContent a,#templateColumns .columnContainer .mcnTextContent p a{
-			/*@editable*/color:#ffffff;
-			/*@editable*/font-weight:normal;
+			/*@editable*/color:#383838;
+			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
 	/*
@@ -355,13 +355,13 @@
 	@tip Set the background color and borders for your email's lower body area.
 	*/
 		#templateLowerBody{
-			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-color:#FFFFFF;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:2px solid ;
-			/*@editable*/border-bottom:0;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:2px solid #EAEAEA;
 			/*@editable*/padding-top:0;
 			/*@editable*/padding-bottom:9px;
 		}
@@ -371,7 +371,7 @@
 	@tip Set the styling for your email's lower body text. Choose a size and color that is easy to read.
 	*/
 		#templateLowerBody .mcnTextContent,#templateLowerBody .mcnTextContent p{
-			/*@editable*/color:#222222;
+			/*@editable*/color:#202020;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:16px;
 			/*@editable*/line-height:150%;
@@ -383,8 +383,8 @@
 	@tip Set the styling for your email's lower body links. Choose a color that helps them stand out from your text.
 	*/
 		#templateLowerBody .mcnTextContent a,#templateLowerBody .mcnTextContent p a{
-			/*@editable*/color:#222222;
-			/*@editable*/font-weight:normal;
+			/*@editable*/color:#383838;
+			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
 	/*
@@ -398,8 +398,8 @@
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:3px none #ffffff;
+			/*@editable*/border-top:2px double #383838;
+			/*@editable*/border-bottom:1px none #a32727;
 			/*@editable*/padding-top:9px;
 			/*@editable*/padding-bottom:9px;
 		}
@@ -409,7 +409,7 @@
 	@tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 	*/
 		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
-			/*@editable*/color:#222222;
+			/*@editable*/color:#656565;
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:12px;
 			/*@editable*/line-height:150%;
@@ -421,9 +421,9 @@
 	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 	*/
 		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
-			/*@editable*/color:#222222;
-			/*@editable*/font-weight:normal;
-			/*@editable*/text-decoration:none;
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:bold;
+			/*@editable*/text-decoration:underline;
 		}
 	@media only screen and (min-width:768px){
 		.templateContainer{
@@ -662,7 +662,7 @@
 		<!--*|END:IF|*-->
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
-                <tbody><tr>
+                <tr>
                     <td align="center" valign="top" id="bodyCell">
 						<!-- BEGIN TEMPLATE // -->
 						<!--[if (gte mso 9)|(IE)]>
@@ -671,42 +671,25 @@
 						<td align="center" valign="top" width="800" style="width:800px;">
 						<![endif]-->
 						<table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-							<tbody><tr>
+							<tr>
 								<td valign="top" id="templatePreheader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
-            <td valign="top" class="mcnTextBlockInner">
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
               	<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
 				<![endif]-->
 
 				<!--[if mso]>
-				<td valign="top" width="400" style="width:400px;">
+				<td valign="top" width="800" style="width:800px;">
 				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:400px;" width="100%" class="mcnTextContentContainer">
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-left:18px; padding-bottom:9px; padding-right:18px;">
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #FFFFFF;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;text-align: right;">
 
-
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
-
-				<!--[if mso]>
-				<td valign="top" width="400" style="width:400px;">
-				<![endif]-->
-                <table align="right" border="0" cellpadding="0" cellspacing="0" style="max-width:400px;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
-
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-left:18px; padding-bottom:9px; padding-right:18px;">
-
-                            <div style="text-align: right;"><a href="*|ARCHIVE|*" target="_blank">Im Browser betrachten</a></div>
-
+                            <a href="*|ARCHIVE|*" target="_blank">Im Browser betrachten</a>
                         </td>
                     </tr>
                 </tbody></table>
@@ -727,13 +710,13 @@
 								<td valign="top" id="templateHeader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
     <tbody class="mcnImageBlockOuter">
             <tr>
-                <td valign="top" style="padding:9px;border-bottom:2px solid;" class="mcnImageBlockInner">
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
                     <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
                         <tbody><tr>
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
 
 
-                                        <img align="center" alt="" src="https://www.themandala.de/site/templates/img/logo_mandala-hotel_blue.png" width="250" style="max-width:250px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img mc:edit="logo" align="center" alt="" src="https://www.themandala.de/site/templates/img/logo_ono-spa_silver.png" width="196" style="max-width:196px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
 
 
                             </td>
@@ -742,10 +725,64 @@
                 </td>
             </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;background-color:#667997;">
+</table></td>
+							</tr>
+							<tr>
+								<td valign="top" id="templateUpperBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<![endif]-->
+	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnBoxedTextBlockInner">
+
+				<!--[if gte mso 9]>
+				<td align="center" valign="top" ">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
+
+                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
+                                <tbody><tr>
+                                    <td mc:edit="headline" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 24px;font-weight: bold;text-align: center;">
+                                        Mandala House News
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if gte mso 9]>
+				</td>
+				<![endif]-->
+
+				<!--[if gte mso 9]>
+                </tr>
+                </table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:0" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 0; padding-left:0; padding-top: 0; padding-bottom: 0;">
+															<img mc:edit="mainImage" align="center" alt="" src="https://www.themandala.de/site/templates/img/newsletter/main.jpg" width="800" style="max-width:800px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table mc:edit="introText" mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
-            <td valign="top" class="mcnTextBlockInner">
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
               	<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
@@ -757,11 +794,12 @@
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
 
-                        <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                            <div style="text-align: center;">
-<span style="color:#ffffff">House News März 2018</span></div>
 
+
+<p>Now that you've selected a template, you'll define the layout of your email and give your content a place to live by adding, rearranging, and deleting content blocks.</p>
+You can create unique layouts by placing a variety of content blocks in different sections of your template.
                         </td>
                     </tr>
                 </tbody></table>
@@ -776,113 +814,244 @@
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
-    <tbody class="mcnImageBlockOuter">
-            <tr>
-                <td valign="top" style="padding:0px" class="mcnImageBlockInner">
-                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
-                        <tbody><tr>
-                            <td class="mcnImageContent" valign="top" style="padding-right: 0px; padding-left: 0px; padding-top: 0; padding-bottom: 0; text-align:center;">
-
-                                    <a href="https://www.themandala.de/de/winter-im-the-mandala-hotel/" title="" class="" target="_blank">
-                                        <img align="center" alt="" src="https://deavita.com/wp-content/uploads/2016/11/ostern-korb-tipps-geschichte-dekoideen-bastelideen-wiese-fr%C3%BChling.jpg" width="800" style="max-width:1500px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
-                                    </a>
-
-                            </td>
-                        </tr>
-                    </tbody></table>
-                </td>
-            </tr>
-    </tbody>
-</table></td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateUpperBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
-    <tbody class="mcnCaptionBlockOuter">
+</table><table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+											<tbody class="mcnButtonBlockOuter">
+													<tr>
+															<td style="padding-top:10px; padding-bottom:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																	<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
+																			<tbody>
+																					<tr>
+																							<td class="mcnButtonContent" mc:edit="introButton" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																									<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #383838;">Button Text
+																									</a>
+																							</td>
+																					</tr>
+																			</tbody>
+																	</table>
+															</td>
+													</tr>
+											</tbody>
+									</table>
+<table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<![endif]-->
+	<tbody class="mcnBoxedTextBlockOuter">
         <tr>
-            <td class="mcnCaptionBlockInner" valign="top" style="padding: 0;">
+            <td valign="top" class="mcnBoxedTextBlockInner">
 
+				<!--[if gte mso 9]>
+				<td align="center" valign="top" ">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+                    <tbody><tr>
 
-<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftContentOuter" width="100%">
-    <tbody><tr>
-        <td valign="top" class="mcnCaptionLeftContentInner" style="padding:0 0px ;">
-            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftImageContentContainer" width="400">
-                <tbody><tr>
-                    <td class="mcnCaptionLeftImageContent" align="center" valign="top">
+                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
 
+                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
+                                <tbody><tr>
+                                    <td mc:edit="divider_1" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: bold;text-align: center;">
+                                        This is a Boxed Text block. Use a contrasting background to draw attention to this content.
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if gte mso 9]>
+				</td>
+				<![endif]-->
 
-                        <img alt="" src="https://www.themandala.de/site/templates/img/lh-newsletter.jpg" width="400" style="max-width:1250px;" class="mcnImage">
-
-
-                    </td>
+				<!--[if gte mso 9]>
                 </tr>
-            </tbody></table>
-            <table class="mcnCaptionLeftTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="400">
-                <tbody><tr>
-                    <td valign="top" class="mcnTextContent">
-
-Liebe Freunde des The Mandala Hotel,<br><br>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-<br><br>
-Herzlichst,<br>
-<img src="https://www.themandala.de/site/templates/img/lhesse.png" /><br>
-<strong>Lutz Hesse</strong><br>
-Geschäftsführender Gesellschafter
-
-                    </td>
-                </tr>
-            </tbody></table>
-        </td>
-    </tr>
-</tbody></table>
-
-
-
-
-
+                </table>
+				<![endif]-->
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image right" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
     <tbody class="mcnCaptionBlockOuter">
         <tr>
-            <td class="mcnCaptionBlockInner" valign="top" style="padding:0px;">
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
 
 
 
 
 <table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
     <tbody><tr>
-        <td valign="top" class="mcnCaptionRightContentInner">
-            <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="400">
+        <td valign="top" class="mcnCaptionRightContentInner" style="padding:0;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="400">
                 <tbody><tr>
-                    <td class="mcnCaptionRightImageContent" align="center" valign="top">
+                    <td class="mcnCaptionRightImageContent" align="left" valign="top">
 
-
-
-                        <img alt="" src="https://www.themandala.de/site/templates/img/ca-newsletter.jpg" width="400" style="max-width:1250px;" class="mcnImage">
-
-
+                        <img mc:edit="blurbImage_2"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="400" style="max-width:400px;" class="mcnImage">
 
                     </td>
                 </tr>
             </tbody></table>
-            <table class="mcnCaptionRightTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="400">
-                <tbody>
+            <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+									<td mc:edit="blurbContent_2" valign="top" class="mcnTextContent" style="padding-right:36px;padding-top:36px;">
+										<h3>Überschrift</h3>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+									</td>
+                </tr>
+								<tr>
+									<td>
+										<table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+																					<tbody class="mcnButtonBlockOuter">
+																							<tr>
+																									<td style="padding-top:10px; padding-bottom:18px;padding-right:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																											<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
+																													<tbody>
+																															<tr>
+																																	<td class="mcnButtonContent" mc:edit="blurbButton_2" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																																			<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #383838;">Button Text
+																																			</a>
+																																	</td>
+																															</tr>
+																													</tbody>
+																											</table>
+																									</td>
+																							</tr>
+																					</tbody>
+																			</table>
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image left" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftContentOuter" width="100%">
+    <tbody><tr>
+        <td valign="top" class="mcnCaptionLeftContentInner" style="padding:0 ;">
+            <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftImageContentContainer" width="400">
+                <tbody><tr>
+                    <td class="mcnCaptionLeftImageContent" align="right" valign="top">
+
+                        <img mc:edit="blurbImage_1"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="400" style="max-width:400px;" class="mcnImage">
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="mcnCaptionLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+                    <td mc:edit="blurbContent_1" valign="top" class="mcnTextContent" style="padding-left:36px;padding-top:36px;">
+											<h3>Überschrift</h3>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    </td>
+                </tr>
+								<tr>
+									<td>
+										<table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+																					<tbody class="mcnButtonBlockOuter">
+																							<tr>
+																									<td style="padding-top:10px; padding-bottom:18px;padding-left:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																											<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
+																													<tbody>
+																															<tr>
+																																	<td class="mcnButtonContent" mc:edit="blurbButton_1" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																																			<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #383838;">Button Text
+																																			</a>
+																																	</td>
+																															</tr>
+																													</tbody>
+																											</table>
+																									</td>
+																							</tr>
+																					</tbody>
+																			</table>
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<![endif]-->
+	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnBoxedTextBlockInner">
+
+				<!--[if gte mso 9]>
+				<td align="center" valign="top" ">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
+
+                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
+                                <tbody><tr>
+                                    <td mc:edit="divider_2" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: bold;text-align: center;">
+                                        This is a Boxed Text block. Use a contrasting background to draw attention to this content.
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if gte mso 9]>
+				</td>
+				<![endif]-->
+
+				<!--[if gte mso 9]>
+                </tr>
+                </table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+							</tr>
+							<tr>
+								<td valign="top" id="templateColumns" mc:hideable >
+									<!--[if (gte mso 9)|(IE)]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="800" style="width:800px;">
 									<tr>
-                    <td valign="top" class="mcnTextContent">
-                        Dear friends of The Mandala Hotel,<br><br>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br><br>
-Yours sincerely,<br>
-<img src="https://www.themandala.de/site/templates/img/candresen.png" /><br>
-<strong>Christian Andresen</strong><br>
-Managing Partner
+									<td align="center" valign="top" width="400" style="width:400px;">
+									<![endif]-->
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
+										<tr>
+											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
+    <tbody class="mcnImageCardBlockOuter">
+        <tr>
+            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                    </td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
+    <tbody><tr>
+        <td class="mcnImageCardBottomImageContent" align="left" valign="top" style="padding-top:0px; padding-right:0px; padding-bottom:0; padding-left:0px;">
 
-                </tr>
-            </tbody></table>
+            <img mc:edit="cardImage_1"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="364" style="max-width:364px;" class="mcnImage">
 
+        </td>
+    </tr>
+    <tr>
+        <td mc:edit="cardText_1" class="mcnTextContent" valign="top" style="padding: 9px 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;" width="346">
+            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
         </td>
     </tr>
 </tbody></table>
@@ -894,28 +1063,43 @@ Managing Partner
         </tr>
     </tbody>
 </table></td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateColumns">
-									<!--[if (gte mso 9)|(IE)]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="800" style="width:800px;">
-									<tr>
-									<td align="center" valign="top" width="400" style="width:400px;">
-									<![endif]-->
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
-										<tbody><tr>
-											<td valign="top" class="columnContainer"></td>
 										</tr>
-									</tbody></table>
+									</table>
 									<!--[if (gte mso 9)|(IE)]>
 									</td>
 									<td align="center" valign="top" width="400" style="width:400px;">
 									<![endif]-->
 									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
-										<tbody><tr>
-											<td valign="top" class="columnContainer"></td>
+										<tr>
+											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
+    <tbody class="mcnImageCardBlockOuter">
+        <tr>
+            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
+    <tbody><tr>
+        <td class="mcnImageCardBottomImageContent" align="left" valign="top" style="padding-top:0px; padding-right:0px; padding-bottom:0; padding-left:0px;">
+
+            <img mc:edit="cardImage_2"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="364" style="max-width:364px;" class="mcnImage">
+
+        </td>
+    </tr>
+    <tr>
+        <td  mc:edit="cardText_2"class="mcnTextContent" valign="top" style="padding: 9px 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;" width="346">
+            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
 										</tr>
-									</tbody></table>
+									</table>
 									<!--[if (gte mso 9)|(IE)]>
 									</td>
 									</tr>
@@ -924,7 +1108,101 @@ Managing Partner
 								</td>
 							</tr>
 							<tr>
-								<td valign="top" id="templateLowerBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width:100%;">
+								<td valign="top" id="templateLowerBody"><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+    <!--[if gte mso 9]>
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<![endif]-->
+	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnBoxedTextBlockInner">
+
+				<!--[if gte mso 9]>
+				<td align="center" valign="top" ">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
+
+                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
+                                <tbody><tr>
+                                    <td mc:edit="divider_3" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: bold;text-align: center;">
+                                        This is a Boxed Text block. Use a contrasting background to draw attention to this content.
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if gte mso 9]>
+				</td>
+				<![endif]-->
+
+				<!--[if gte mso 9]>
+                </tr>
+                </table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+
+				<!--[if mso]>
+				<td valign="top" width="800" style="width:800px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td mc:edit="outroText" valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+                            When you're ready to change the look of your email, take a look through the “design” tab to set background colors, borders, and other styles.<p>If you need a bit of inspiration, you can <a href="http://inspiration.mailchimp.com" class="mc-template-link">see what other MailChimp users are doing</a>, or <a href="http://mailchimp.com/resources/email-design-guide/" class="mc-template-link">learn about email design</a> and blaze your own trail.</p>
+                        </td>
+                    </tr>
+										<tr>
+											<td>
+												<table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+																							<tbody class="mcnButtonBlockOuter">
+																									<tr>
+																											<td style="padding-top:10px; padding-bottom:18px;padding-right:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																													<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
+																															<tbody>
+																																	<tr>
+																																			<td class="mcnButtonContent" mc:edit="outroButton" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																																					<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #383838;">Button Text
+																																					</a>
+																																			</td>
+																																	</tr>
+																															</tbody>
+																													</table>
+																											</td>
+																									</tr>
+																							</tbody>
+																					</table>
+											</td>
+										</tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+							</tr>
+							<tr>
+								<td valign="top" id="templateFooter"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock" style="min-width:100%;">
     <tbody class="mcnFollowBlockOuter">
         <tr>
             <td align="center" valign="top" style="padding:9px" class="mcnFollowBlockInner">
@@ -957,7 +1235,7 @@ Managing Partner
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="https://www.facebook.com/themandala.de/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-facebook-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a mc:edit="facebook" mc:hideable href="http://www.facebook.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-facebook-48.png" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -989,7 +1267,7 @@ Managing Partner
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="https://www.instagram.com/themandalahotel/" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-instagram-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a mc:edit="instagram" mc:hideable href="http://instagram.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-instagram-48.png" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -1021,7 +1299,7 @@ Managing Partner
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="https://www.youtube.com/user/themandalahotel" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-youtube-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a mc:edit="youtube" mc:hideable href="http://www.youtube.com" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-youtube-48.png" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -1053,7 +1331,7 @@ Managing Partner
                                                                         <tbody><tr>
 
                                                                                 <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
-                                                                                    <a href="http://www.themandala.de" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-link-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                    <a mc:edit="website" mc:hideable href="https://www.themandala.de" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/light-link-48.png" style="display:block;" height="24" width="24" class=""></a>
                                                                                 </td>
 
 
@@ -1087,13 +1365,10 @@ Managing Partner
             </td>
         </tr>
     </tbody>
-</table></td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateFooter"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
-            <td valign="top" class="mcnTextBlockInner">
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
               	<!--[if mso]>
 				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
 				<tr>
@@ -1106,10 +1381,10 @@ Managing Partner
                     <tbody><tr>
 
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-                            The Mandala Hotel GmbH, Potsdamer Strasse 3, 10785 Berlin, Germany<br>
+<strong>The Mandala Hotel GmbH, Potsdamer Strasse 3, 10785 Berlin, Germany</strong><br><br>
+<a href="*|UPDATE_PROFILE|*">E-Mail Einstellungen</a> - <a href="*|UNSUB|*">Abmelden</a><br>
 <br>
-<a href="*|UPDATE_PROFILE|*">E-Mail Einstellungen</a>&nbsp;- <a href="*|UNSUB|*" target="_blank">Abmelden</a>
+*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
                         </td>
                     </tr>
                 </tbody></table>
@@ -1126,7 +1401,7 @@ Managing Partner
     </tbody>
 </table></td>
 							</tr>
-						</tbody></table>
+						</table>
 						<!--[if (gte mso 9)|(IE)]>
 						</td>
 						</tr>
@@ -1135,8 +1410,7 @@ Managing Partner
 						<!-- // END TEMPLATE -->
                     </td>
                 </tr>
-            </tbody></table>
+            </table>
         </center>
-
-
-</body></html>
+    </body>
+</html>
