@@ -50,8 +50,8 @@
 			-ms-interpolation-mode:bicubic;
 		}
 		table{
-			mso-table-lspace:0pt;
-			mso-table-rspace:0pt;
+			mso-table-lspace:-1pt;
+			mso-table-rspace:-1pt;
 		}
 		.ReadMsgBody{
 			width:100%;
@@ -223,7 +223,8 @@
 			/*@editable*/font-family:Helvetica;
 			/*@editable*/font-size:12px;
 			/*@editable*/line-height:150%;
-			/*@editable*/text-align:left;
+			/*@editable*/text-align:center;
+			line-height: 1;
 		}
 	/*
 	@tab Preheader
@@ -235,13 +236,14 @@
 			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
+
 	/*
 	@tab Header
 	@section Header Style
 	@tip Set the background color and borders for your email's header area.
 	*/
 		#templateHeader{
-			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-color:#383838;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -249,7 +251,7 @@
 			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:2px solid #383838;
 			/*@editable*/padding-top:9px;
-			/*@editable*/padding-bottom:0;
+			/*@editable*/padding-bottom:9px;
 		}
 	/*
 	@tab Header
@@ -687,7 +689,7 @@
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
 
-                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #FFFFFF;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;text-align: right;">
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #ffffff;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;text-align: right;">
 
                             <a href="*|ARCHIVE|*" target="_blank">Im Browser betrachten</a>
                         </td>
@@ -869,7 +871,7 @@ You can create unique layouts by placing a variety of content blocks in differen
             </td>
         </tr>
     </tbody>
-</table><table mc:repeatable="captionImages" mc:variant="Content with Image right" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image left and CTA" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
     <tbody class="mcnCaptionBlockOuter">
         <tr>
             <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
@@ -898,7 +900,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </tr>
 								<tr>
 									<td>
-										<table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+										<table class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 																					<tbody class="mcnButtonBlockOuter">
 																							<tr>
 																									<td style="padding-top:10px; padding-bottom:18px;padding-right:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
@@ -929,7 +931,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             </td>
         </tr>
     </tbody>
-</table><table mc:repeatable="captionImages" mc:variant="Content with Image left" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image right and CTA" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
     <tbody class="mcnCaptionBlockOuter">
         <tr>
             <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
@@ -956,7 +958,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </tr>
 								<tr>
 									<td>
-										<table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+										<table class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 																					<tbody class="mcnButtonBlockOuter">
 																							<tr>
 																									<td style="padding-top:10px; padding-bottom:18px;padding-left:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
@@ -974,6 +976,185 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 																							</tr>
 																					</tbody>
 																			</table>
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image left, no CTA" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+    <tbody><tr>
+        <td valign="top" class="mcnCaptionRightContentInner" style="padding:0;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="400">
+                <tbody><tr>
+                    <td class="mcnCaptionRightImageContent" align="left" valign="top">
+
+                        <img mc:edit="blurbImage_3"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="400" style="max-width:400px;" class="mcnImage">
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+									<td mc:edit="blurbContent_3" valign="top" class="mcnTextContent" style="padding-right:36px;padding-top:36px;padding-bottom:18px;">
+										<h3>Überschrift</h3>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+									</td>
+                </tr>
+								<tr>
+									<td>
+
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="captionImages" mc:variant="Content with Image right, no CTA" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftContentOuter" width="100%">
+    <tbody><tr>
+        <td valign="top" class="mcnCaptionLeftContentInner" style="padding:0 ;">
+            <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftImageContentContainer" width="400">
+                <tbody><tr>
+                    <td class="mcnCaptionLeftImageContent" align="right" valign="top">
+
+                        <img mc:edit="blurbImage_4"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="400" style="max-width:400px;" class="mcnImage">
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="mcnCaptionLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+                    <td mc:edit="blurbContent_4" valign="top" class="mcnTextContent" style="padding-left:36px;padding-top:36px;padding-bottom:18px;">
+											<h3>Überschrift</h3>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                    </td>
+                </tr>
+								<tr>
+									<td>
+
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="captionImages" mc:variant="Lutz Hesse" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightContentOuter" width="100%">
+    <tbody><tr>
+        <td valign="top" class="mcnCaptionRightContentInner" style="padding:0;">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionRightImageContentContainer" width="400">
+                <tbody><tr>
+                    <td class="mcnCaptionRightImageContent" align="left" valign="top">
+
+                        <img mc:edit="blurbImage_5"alt="" src="https://www.themandala.de/site/templates/img/lh-newsletter.jpg" width="400" style="max-width:400px;" class="mcnImage">
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="mcnCaptionRightTextContentContainer" align="right" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+									<td mc:edit="blurbContent_5" class="mcnTextContent" valign="top" style="padding-right:36px;padding-top:36px;padding-bottom:18px;">
+										Liebe Freunde des The Mandala Hotel,<br><br>
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.
+										<br><br>
+										Herzlichst,<br>
+										<img src="https://www.themandala.de/site/templates/img/lhesse.png"><br>
+										<strong>Lutz Hesse</strong><br>
+										Geschäftsführender Gesellschafter
+									</td>
+                </tr>
+								<tr>
+									<td>
+
+									</td>
+								</tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="captionImages" mc:variant="Christian Andresen" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:0;">
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftContentOuter" width="100%">
+    <tbody><tr>
+        <td valign="top" class="mcnCaptionLeftContentInner" style="padding:0 ;">
+            <table align="right" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionLeftImageContentContainer" width="400">
+                <tbody><tr>
+                    <td class="mcnCaptionLeftImageContent" align="right" valign="top">
+
+                        <img mc:edit="blurbImage_6"alt="" src="https://www.themandala.de/site/templates/img/ca-newsletter.jpg" width="400" style="max-width:400px;" class="mcnImage">
+
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="mcnCaptionLeftTextContentContainer" align="left" border="0" cellpadding="0" cellspacing="0" width="364">
+                <tbody><tr>
+									<td mc:edit="blurbContent_6"class="mcnTextContent" valign="top" style="padding-left:36px;padding-top:36px;padding-bottom:18px;">
+											Dear friends of The Mandala Hotel,<br><br>
+											Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. <br><br>
+											Yours sincerely,<br>
+											<img src="https://www.themandala.de/site/templates/img/candresen.png"><br>
+											<strong>Christian Andresen</strong><br>
+											Managing Partner
+									</td>
+                </tr>
+								<tr>
+									<td>
+
 									</td>
 								</tr>
             </tbody></table>
