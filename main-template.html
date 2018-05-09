@@ -169,16 +169,13 @@
 		h3{
 			/*@editable*/color:#383838;
 			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:20px;
+			/*@editable*/font-size:16px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:125%;
 			/*@editable*/letter-spacing:normal;
-			text-align:center;
-			border-top: 1px dotted #383838;
-			border-bottom: 1px dotted #383838;
-			padding-top:8px;
-			padding-bottom:8px;
+			text-align:left;
+
 			margin-bottom:8px;
 		}
 	/*
@@ -525,7 +522,15 @@
 			display:none !important;
 			width:100% !important;
 		}
-
+}	@media only screen and (max-width: 480px){
+	/*Adjust buttons in captionImages container to align properly on mobile*/
+	.mcnCaptionRightTextContentContainer .mcnButtonBlockInner {
+		padding-left: 18px !important;
+	}
+	.mcnCaptionLeftTextContentContainer .mcnButtonBlockInner {
+		padding-left: 18px !important;
+	}
+}
 }	@media only screen and (max-width: 480px){
 	/*
 	@tab Mobile Styles
@@ -656,8 +661,7 @@
 			/*@editable*/font-size:14px !important;
 			/*@editable*/line-height:150% !important;
 		}
-
-}</style></head>
+</style></head>
     <body>
 		<!--*|IF:MC_PREVIEW_TEXT|*-->
 		<!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
@@ -819,7 +823,7 @@ You can create unique layouts by placing a variety of content blocks in differen
 </table><table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 											<tbody class="mcnButtonBlockOuter">
 													<tr>
-															<td style="padding-top:10px; padding-bottom:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+															<td style="padding-top:10px; padding-bottom:18px; border-top:0;padding-left:18px;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="left">
 																	<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
 																			<tbody>
 																					<tr>
@@ -834,7 +838,7 @@ You can create unique layouts by placing a variety of content blocks in differen
 													</tr>
 											</tbody>
 									</table>
-<table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+<table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
 	<![endif]-->
@@ -903,7 +907,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 										<table class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 																					<tbody class="mcnButtonBlockOuter">
 																							<tr>
-																									<td style="padding-top:10px; padding-bottom:18px;padding-right:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																									<td style="padding-top:10px; padding-bottom:18px;padding-right:0; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="left">
 																											<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
 																													<tbody>
 																															<tr>
@@ -961,7 +965,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 										<table class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 																					<tbody class="mcnButtonBlockOuter">
 																							<tr>
-																									<td style="padding-top:10px; padding-bottom:18px;padding-left:18px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																									<td style="padding-top:10px; padding-bottom:18px;padding-left:36px; border-top:0;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="left">
 																											<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
 																													<tbody>
 																															<tr>
@@ -1169,7 +1173,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             </td>
         </tr>
     </tbody>
-</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
 	<![endif]-->
@@ -1289,7 +1293,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 								</td>
 							</tr>
 							<tr>
-								<td valign="top" id="templateLowerBody"><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+								<td valign="top" id="templateLowerBody"><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
 	<![endif]-->
