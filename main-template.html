@@ -246,9 +246,9 @@
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:2px solid #383838;
+			/*@editable*/border-bottom:0;;
 			/*@editable*/padding-top:9px;
-			/*@editable*/padding-bottom:9px;
+			/*@editable*/padding-bottom:0;
 		}
 	/*
 	@tab Header
@@ -310,13 +310,24 @@
 			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
+		#templateUpperBody .mcnTextBlock.dark {
+			background-color:#383838;
+			color:#ffffff;
+		}
+		#templateUpperBody .mcnTextContent.dark,#templateUpperBody .mcnTextContent.dark p{
+			color:#ffffff;
+		}
+		#templateUpperBody .mcnTextContent.dark a,#templateUpperBody .mcnTextContent.dark p a{
+			color:#ffffff;
+		}
+
 	/*
 	@tab Columns
 	@section Column Style
 	@tip Set the background color and borders for your email's columns.
 	*/
 		#templateColumns{
-			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-color:#383838;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -348,6 +359,12 @@
 			/*@editable*/font-weight:bold;
 			/*@editable*/text-decoration:underline;
 		}
+		#templateColumns .mcnTextContent.left {
+			text-align:left;
+		}
+		#templateColumns .mcnTextContent.right {
+			text-align:right;
+		}
 	/*
 	@tab Lower Body
 	@section Lower Body Style
@@ -360,9 +377,9 @@
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
-			/*@editable*/border-bottom:2px solid #EAEAEA;
+			/*@editable*/border-bottom:0px solid #EAEAEA;
 			/*@editable*/padding-top:0;
-			/*@editable*/padding-bottom:9px;
+			/*@editable*/padding-bottom:0;
 		}
 	/*
 	@tab Lower Body
@@ -397,7 +414,7 @@
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
-			/*@editable*/border-top:2px double #ffffff;
+			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:1px none #a32727;
 			/*@editable*/padding-top:9px;
 			/*@editable*/padding-bottom:9px;
@@ -639,6 +656,9 @@
 			/*@editable*/font-size:16px !important;
 			/*@editable*/line-height:150% !important;
 		}
+		#templateColumns .mcnTextContent.left, #templateColumns .mcnTextContent.right {
+			text-align: center !important;
+		}
 
 }	@media only screen and (max-width: 480px){
 	/*
@@ -703,7 +723,7 @@
 				<!--[if mso]>
 				</td>
 				<![endif]-->
-
+				
 				<!--[if mso]>
 				</tr>
 				</table>
@@ -769,10 +789,7 @@
             </td>
         </tr>
     </tbody>
-</table></td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateUpperBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
     <tbody class="mcnImageBlockOuter">
             <tr>
                 <td valign="top" style="padding:0" class="mcnImageBlockInner">
@@ -786,7 +803,115 @@
                 </td>
             </tr>
     </tbody>
-</table><table  mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
+    <!--[if gte mso 9]>
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<![endif]-->
+	<tbody class="mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnBoxedTextBlockInner">
+
+				<!--[if gte mso 9]>
+				<td align="center" valign="top" ">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
+
+                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
+                                <tbody><tr>
+                                    <td mc:edit="divider_3" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: bold;text-align: center;">
+                                        This is a Boxed Text block. Use a contrasting background to draw attention to this content.
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if gte mso 9]>
+				</td>
+				<![endif]-->
+
+				<!--[if gte mso 9]>
+                </tr>
+                </table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+							</tr>
+							<tr>
+								<td valign="top" id="templateColumns" mc:hideable >
+									<!--[if (gte mso 9)|(IE)]>
+									<table align="center" border="0" cellspacing="0" cellpadding="0" width="800" style="width:800px;">
+									<tr>
+									<td align="center" valign="top" width="400" style="width:400px;">
+									<![endif]-->
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
+										<tr>
+											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
+    <tbody class="mcnImageCardBlockOuter">
+        <tr>
+            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
+    <tbody>
+    <tr>
+        <td mc:edit="cardText_1" class="mcnTextContent left" valign="top" style="padding: 9px 0;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: left;" width="346">
+            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+										</tr>
+									</table>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									<td align="center" valign="top" width="400" style="width:400px;">
+									<![endif]-->
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
+										<tr>
+											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
+    <tbody class="mcnImageCardBlockOuter">
+        <tr>
+            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
+    <tbody>
+    <tr>
+        <td  mc:edit="cardText_2"class="mcnTextContent right" valign="top" style="padding: 9px 0px;color: #ffffff;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align:right;" width="346">
+            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+										</tr>
+									</table>
+									<!--[if (gte mso 9)|(IE)]>
+									</td>
+									</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" id="templateUpperBody"><table  mc:repeatable="mainText" mc:variant="Helle Vorlage" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
@@ -801,7 +926,7 @@
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
 
-                        <td mc:edit="introText" valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        <td mc:edit="introTextLight" valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
 
 
@@ -821,14 +946,49 @@ You can create unique layouts by placing a variety of content blocks in differen
             </td>
         </tr>
     </tbody>
-</table><table mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
+</table><table  mc:repeatable="mainText" mc:variant="Dunkle Vorlage" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock dark" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+
+				<!--[if mso]>
+				<td valign="top" width="800" style="width:800px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td mc:edit="introTextDark" valign="top" class="mcnTextContent dark" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;color:#ffffff;">
+
+
+
+<p>Now that you've selected a template, you'll define the layout of your email and give your content a place to live by adding, rearranging, and deleting content blocks.</p>
+You can create unique layouts by placing a variety of content blocks in different sections of your template.
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table mc:repeatable="mainButton" mc:variant"Heller Buttonblock" mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;" width="100%" cellspacing="0" cellpadding="0" border="0">
 											<tbody class="mcnButtonBlockOuter">
 													<tr>
-															<td style="padding-top:10px; padding-bottom:18px; border-top:0;padding-left:18px;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="left">
+															<td style="padding-top:10px; padding-bottom:18px; border-top:0;padding-left:18px;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
 																	<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #383838;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
 																			<tbody>
 																					<tr>
-																							<td class="mcnButtonContent" mc:edit="introButton" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																							<td class="mcnButtonContent" mc:edit="introButtonLight" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
 																									<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #383838;">Button Text
 																									</a>
 																							</td>
@@ -838,7 +998,24 @@ You can create unique layouts by placing a variety of content blocks in differen
 															</td>
 													</tr>
 											</tbody>
-									</table>
+									</table><table mc:repeatable="mainButton" mc:variant"Dunkler Buttonblock" mc:hideable class="mcnButtonBlock" style="text-align:center; min-width:100%;background-color:#383838;" width="100%" cellspacing="0" cellpadding="0" border="0">
+										<tbody class="mcnButtonBlockOuter">
+												<tr>
+														<td style="padding-top:10px; padding-bottom:18px; border-top:0;padding-left:18px;border-left:0;border-right:0;border-bottom:0" class="mcnButtonBlockInner" valign="middle" align="center">
+																<table class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 2px solid #ffffff;border-radius: 0px;" cellspacing="0" cellpadding="0" border="0">
+																		<tbody>
+																				<tr>
+																						<td class="mcnButtonContent" mc:edit="introButtonDark" style="font-family: Arial; font-size: 14px; padding: 8px;" valign="middle" align="center">
+																								<a class="mcnButton " title="" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #ffffff;">Button Text
+																								</a>
+																						</td>
+																				</tr>
+																		</tbody>
+																</table>
+														</td>
+												</tr>
+										</tbody>
+								</table>
 <table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
@@ -1213,125 +1390,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </tbody>
 </table></td>
 							</tr>
+							
 							<tr>
-								<td valign="top" id="templateColumns" mc:hideable >
-									<!--[if (gte mso 9)|(IE)]>
-									<table align="center" border="0" cellspacing="0" cellpadding="0" width="800" style="width:800px;">
-									<tr>
-									<td align="center" valign="top" width="400" style="width:400px;">
-									<![endif]-->
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
-										<tr>
-											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
-    <tbody class="mcnImageCardBlockOuter">
-        <tr>
-            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
-    <tbody><tr>
-        <td class="mcnImageCardBottomImageContent" align="left" valign="top" style="padding-top:0px; padding-right:0px; padding-bottom:0; padding-left:0px;">
-
-            <img mc:edit="cardImage_1"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="364" style="max-width:364px;" class="mcnImage">
-
-        </td>
-    </tr>
-    <tr>
-        <td mc:edit="cardText_1" class="mcnTextContent" valign="top" style="padding: 9px 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;" width="346">
-            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
-        </td>
-    </tr>
-</tbody></table>
-
-
-
-
-            </td>
-        </tr>
-    </tbody>
-</table></td>
-										</tr>
-									</table>
-									<!--[if (gte mso 9)|(IE)]>
-									</td>
-									<td align="center" valign="top" width="400" style="width:400px;">
-									<![endif]-->
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="400" class="columnWrapper">
-										<tr>
-											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
-    <tbody class="mcnImageCardBlockOuter">
-        <tr>
-            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnImageCardBottomContent" width="100%" style="background-color: #383838;">
-    <tbody><tr>
-        <td class="mcnImageCardBottomImageContent" align="left" valign="top" style="padding-top:0px; padding-right:0px; padding-bottom:0; padding-left:0px;">
-
-            <img mc:edit="cardImage_2"alt="" src="https://www.themandala.de/site/templates/img/newsletter/baobab.png" width="364" style="max-width:364px;" class="mcnImage">
-
-        </td>
-    </tr>
-    <tr>
-        <td  mc:edit="cardText_2"class="mcnTextContent" valign="top" style="padding: 9px 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;" width="346">
-            Input caption text here. Use the block's Settings tab to change the caption position and set other styles.
-        </td>
-    </tr>
-</tbody></table>
-
-
-
-
-            </td>
-        </tr>
-    </tbody>
-</table></td>
-										</tr>
-									</table>
-									<!--[if (gte mso 9)|(IE)]>
-									</td>
-									</tr>
-									</table>
-									<![endif]-->
-								</td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateLowerBody"><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;background-color:#383838;">
-    <!--[if gte mso 9]>
-	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
-	<![endif]-->
-	<tbody class="mcnBoxedTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnBoxedTextBlockInner">
-
-				<!--[if gte mso 9]>
-				<td align="center" valign="top" ">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;" class="mcnBoxedTextContentContainer">
-                    <tbody><tr>
-
-                        <td style="padding-top:0; padding-left:0; padding-bottom:0; padding-right:0;">
-
-                            <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #383838;">
-                                <tbody><tr>
-                                    <td mc:edit="divider_3" valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: bold;text-align: center;">
-                                        This is a Boxed Text block. Use a contrasting background to draw attention to this content.
-                                    </td>
-                                </tr>
-                            </tbody></table>
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if gte mso 9]>
-				</td>
-				<![endif]-->
-
-				<!--[if gte mso 9]>
-                </tr>
-                </table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+								<td valign="top" id="templateLowerBody"><table mc:hideable border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
